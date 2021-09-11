@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+    color: #fff;
+}
+
+body {
+    background-color: #292929
+}
+
+.container-home {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(41, 41, 41, .85), rgba(41, 41, 41, .85)), url(images/home.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.home-navbar {
+    height: 20%;
+    /* outline: solid 2px yellow; */
+}
+
+#icon-navbar {
+    color: #FFFFFF;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    /* outline: solid 2px blue; */
+}
+
+.home-section-1 {
+    height: 45vh;
+    /* outline: solid 2px orange; */
+}
+
+#logo-home {
+    width: 14.8125rem;
+    border-radius: 118.5px;
+    margin: 25px auto;
+    display: block;
+    /* outline: solid 2px red; */
+}
+
+.home-section-2 {
+    margin-top: 2.5%;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    /* outline: solid 2px violet; */
+    height: 100vh;
+}
+
+.home-section-2-text-1 {
+    font-size: 1.688rem;
+}
+
+.home-section-2-text-2 {
+    font-size: 1.235rem;
+}
+
+.home-section-2 img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    animation: arrow 1s infinite;
+}
+
+@keyframes arrow
+  {
+  0%   {transform: translateY(0);}
+  50% {transform: translateY(30px);}
+  100% {transform: translateY(0);}
+  }
