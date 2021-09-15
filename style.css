@@ -93,7 +93,6 @@ body {
 
 .container-about {
     height: 25%;
-    background-color: yellow;
 }
 
 .banner-about {
@@ -113,6 +112,25 @@ body {
     font-weight: normal;
     font-size: 30px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.about-section-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+}
+
+.about-section-1 p {
+    margin: 1.563em 0.813em;
+    font-size: calc(0.938em + 0.25vw);
+    line-height: calc(1.375em + 0.5vw);
+    text-align: center;
+}
+
+.about-section-2 {
+    height: 70%;
+    background-color: #1e1e1e;
 }
 
 /* MENU SECTION */
