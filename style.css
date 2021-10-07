@@ -107,7 +107,7 @@ body {
     background-position: top;
 }
 
-.banner-about h2 {
+h2 {
     text-align: center;
     font-style: normal;
     font-weight: normal;
@@ -131,7 +131,6 @@ body {
 
 .about-section-2 {
     height: 55%;
-    outline: 1px red solid;
     background-color: #1e1e1e;
 }
 
@@ -150,6 +149,34 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
+}
+
+.menu-section-1 {
+    height: 16.5%;
+    display: flex;
+
+}
+
+.menu-section-1 ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.menu-section-1 li {
+    flex-grow: 1;
+    font-size: 1.25rem;
+    text-align: center;
+    list-style: none;
+    margin: 2.5%;
+    color: #777777;
+}
+
+.menu-section-2 {
+    height: 68.5%;
+    background-color: #1e1e1e;
 }
 
 /* CONTACT SECTION */
