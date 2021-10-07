@@ -105,7 +105,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    background-attachment: fixed;
 }
 
 .banner-about h2 {
@@ -151,7 +150,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
-    background-attachment: fixed;
 }
 
 /* CONTACT SECTION */
