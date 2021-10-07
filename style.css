@@ -22,6 +22,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .home-navbar {
@@ -104,6 +105,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+    background-attachment: fixed;
 }
 
 .banner-about h2 {
@@ -129,7 +131,8 @@ body {
 }
 
 .about-section-2 {
-    height: 70%;
+    height: 55%;
+    outline: 1px red solid;
     background-color: #1e1e1e;
 }
 
@@ -137,7 +140,18 @@ body {
 
 .container-menu {
     height: 25%;
-    background-color: green;
+}
+
+.banner-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15%;
+    background-image: linear-gradient(rgba(41, 41, 41, .75), rgba(41, 41, 41, .75)), url(/images/menu.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
 }
 
 /* CONTACT SECTION */
