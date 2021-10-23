@@ -34,7 +34,7 @@ body {
 .activeMain {
     background-color: #0e0e0e;
     position: fixed;
-    animation: slide-bottom 0.5s ease-in-out both;
+    animation: slide-bottom .3s ease-in-out both;
 }
 
 
@@ -52,7 +52,7 @@ body {
     margin-top: 15.5%;
     background-color: #0e0e0e;
     width: 100%;
-    animation: slide-bottom 0.5s ease-in-out both;
+    animation: slide-bottom .3s ease-in-out both;
 }
 
 .navbar a {
