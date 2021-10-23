@@ -1,23 +1,23 @@
 
-const menuButton = document.getElementById("icon-navbar");
+const navButton = document.getElementById("icon-navbar");
 const navbarMenu = document.getElementById("navbarMenu");
 const navbar = document.getElementsByClassName("home-navbar")[0];
+
+let home = document.getElementById("homeNav");
+let about = document.getElementById("aboutNav");
+let menu = document.getElementById("menuNav");
+let contact = document.getElementById("contactNav");
 
 function toggleMenu() {
     navbarMenu.classList.toggle("active");
     navbar.classList.toggle("activeMain");
-    /* if (navbarMenu.classList.contains("active")) {
-        navbar.style.backgroundColor = "rgb(14, 14, 14)";
-        navbar.style.position = "fixed";
-    }
-    else {
-        navbar.removeAttribute("style");
-    } */
-
 }
 
+navButton.addEventListener("click", toggleMenu);
+home.addEventListener("click", toggleMenu);
+about.addEventListener("click", toggleMenu);
+menu.addEventListener("click", toggleMenu);
+contact.addEventListener("click", toggleMenu);
 
-
-menuButton.addEventListener("click", toggleMenu);
 
 
