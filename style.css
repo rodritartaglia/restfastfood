@@ -35,7 +35,7 @@ body {
 .activeMain {
     background-color: #0e0e0e;
     position: fixed;
-    height: 9%;
+    height: 10%;
     transition: .45s;
 }
 
