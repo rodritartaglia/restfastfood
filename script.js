@@ -5,21 +5,19 @@ const navbar = document.getElementsByClassName("home-navbar")[0];
 
 function toggleMenu() {
     navbarMenu.classList.toggle("active");
-}
-
-
-
-menuButton.addEventListener("click", function () {
-    toggleMenu();
-    if (navbar.style.backgroundColor == "#0e0e0e") {
-        navbar.style.backgroundColor = "transparent";
-        navbar.style.position = "";
+    navbar.classList.toggle("activeMain");
+    /* if (navbarMenu.classList.contains("active")) {
+        navbar.style.backgroundColor = "rgb(14, 14, 14)";
+        navbar.style.position = "fixed";
     }
     else {
-        navbar.style.backgroundColor = "#0e0e0e";
-        navbar.style.position = "fixed";
-    };
+        navbar.removeAttribute("style");
+    } */
+
 }
-);
+
+
+
+menuButton.addEventListener("click", toggleMenu);
 
 
