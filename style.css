@@ -210,12 +210,12 @@ h2 {
     flex-direction: column;
     width: 100%;
     justify-content: center;
-    align-items: center;
     text-align: center;
     position: relative;
 }
 
 #btnLeft {
+    display: none;
     position: absolute;
     left: 15%;
     top: 25%;
@@ -231,6 +231,7 @@ h2 {
 
 .slider {
     width: 32.5%;
+    margin: auto;
     overflow: hidden;
 }
 
@@ -238,19 +239,18 @@ h2 {
     display: flex;
     width: 100%;
     height: 110px;
-
+    margin-left: 0%;
 }
 
 .slider-image img {
     width: 100%;
-    object-fit: cover;
-
 }
 
 .about-slide-container h6 {
     font-weight: normal;
     line-height: 1.375rem;
     font-size: 1rem;
+    margin: auto;
 }
 
 .slider-dots {
@@ -269,6 +269,9 @@ h2 {
     border-radius: 50%;
 
 }
+
+
+
 
 /* MENU SECTION */
 
