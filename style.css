@@ -199,7 +199,7 @@ h2 {
     align-items: center;
 }
 
-.about-section-2 h4 {
+.about-slide-container h4 {
     font-weight: normal;
     line-height: 2.563rem;
     font-size: 1.719rem;
@@ -209,7 +209,8 @@ h2 {
     display: flex;
     flex-direction: column;
     width: 100%;
-    justify-content: center;
+    height: 100%;
+    justify-content: space-evenly;
     text-align: center;
     position: relative;
 }
@@ -217,24 +218,27 @@ h2 {
 #btnLeft {
     display: none;
     position: absolute;
-    left: 15%;
-    top: 25%;
+    left: 10%;
+    top: 32.5%;
     cursor: pointer;
+    padding: 5%;
 
 }
 
 #btnRight {
     position: absolute;
-    right: 15%;
-    top: 25%;
+    right: 10%;
+    top: 32.5%;
     cursor: pointer;
     padding: 5%;
 }
 
 .slider {
     width: 32.5%;
-    margin: auto;
+    margin: 0 auto;
     overflow: hidden;
+    box-shadow: 0 0 0 5px #1e1e1e,
+                0 0 0 6px #fff;
 }
 
 .slider-image {
@@ -242,25 +246,25 @@ h2 {
     width: 100%;
     height: 110px;
     margin-left: 0%;
+
 }
 
 .slider-image img {
     width: 100%;
+    object-fit: cover;
+
 }
 
 .about-slide-container h6 {
     font-weight: normal;
     line-height: 1.375rem;
     font-size: 1rem;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .slider-dots {
-    display: flex;
-    width: 30%;
-    justify-content: space-between;
-    position: absolute;
-    bottom: -25%;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .dot {
@@ -269,7 +273,7 @@ h2 {
     background-color: #414141;
     display: inline-block;
     border-radius: 50%;
-
+    margin: 0 2.5%;
 }
 
 
