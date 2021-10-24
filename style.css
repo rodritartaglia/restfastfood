@@ -24,7 +24,7 @@ body {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    
+
 }
 
 .home-navbar {
@@ -193,6 +193,81 @@ h2 {
 .about-section-2 {
     height: 55%;
     background-color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section-2 h4 {
+    font-weight: normal;
+    line-height: 2.563rem;
+    font-size: 1.719rem;
+}
+
+.about-slide-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+#btnLeft {
+    position: absolute;
+    left: 15%;
+    top: 25%;
+    cursor: pointer;
+}
+
+#btnRight {
+    position: absolute;
+    right: 15%;
+    top: 25%;
+    cursor: pointer;
+}
+
+.slider {
+    width: 32.5%;
+    overflow: hidden;
+}
+
+.slider-image {
+    display: flex;
+    width: 100%;
+    height: 110px;
+
+}
+
+.slider-image img {
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.about-slide-container h6 {
+    font-weight: normal;
+    line-height: 1.375rem;
+    font-size: 1rem;
+}
+
+.slider-dots {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    position: absolute;
+    bottom: -25%;
+}
+
+.dot {
+    width: 13px;
+    height: 13px;
+    background-color: #414141;
+    display: inline-block;
+    border-radius: 50%;
+
 }
 
 /* MENU SECTION */

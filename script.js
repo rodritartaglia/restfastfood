@@ -2,6 +2,8 @@
 const navButton = document.getElementById("icon-navbar");
 const navbarMenu = document.getElementById("navbarMenu");
 const navbar = document.getElementsByClassName("home-navbar")[0];
+const btnLeft = document.getElementById("btnLeft");
+const btnRight = document.getElementById("btnRight");
 
 let home = document.getElementById("homeNav");
 let about = document.getElementById("aboutNav");
@@ -18,6 +20,4 @@ home.addEventListener("click", toggleMenu);
 about.addEventListener("click", toggleMenu);
 menu.addEventListener("click", toggleMenu);
 contact.addEventListener("click", toggleMenu);
-
-
 
