@@ -24,6 +24,7 @@ function toggleMenu() {
 function next() {
     let marginValue = sliderImage.style.marginLeft;
     sliderImage.style.marginLeft = (parseInt(marginValue) - 100) + "%";
+    sliderImage.style.transition = "all 0.5s";
     profileCont++
 
 }
@@ -31,6 +32,7 @@ function next() {
 function prev() {
     let marginValue = sliderImage.style.marginLeft;
     sliderImage.style.marginLeft = (parseInt(marginValue) + 100) + "%";
+    sliderImage.style.transition = "all 0.5s";
     profileCont--
 }
 
