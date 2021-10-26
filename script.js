@@ -59,6 +59,21 @@ function dotColor(){
     dots[profileCont].style.backgroundColor = "#fff"
 }
 
+function initMap() {
+    const coord = {lat:-34.5575894 , lng: -58.5522184};
+
+    const map = new google.maps.Map(document.getElementById("contact-map"),
+    {
+        zoom: 10,
+        center: coord
+    });
+
+    const marker = new google.maps.Marker({
+        position: coord,
+        map: map
+    });
+}
+
 sliderImage.style.marginLeft = "0%";
 dots[0].style.backgroundColor = "#fff"
 

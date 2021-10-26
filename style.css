@@ -381,6 +381,12 @@ h2 {
     background-color: #1e1e1e;
 }
 
+#contact-map {
+    width: 75%;
+    height: 75%;
+    margin: auto;
+}
+
 h6 {
     width: 50%;
 }
