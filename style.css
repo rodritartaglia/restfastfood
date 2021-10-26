@@ -221,7 +221,7 @@ h2 {
     left: 10%;
     top: 32.5%;
     cursor: pointer;
-    padding: 5%;
+    padding: 18px;
 
 }
 
@@ -230,7 +230,7 @@ h2 {
     right: 10%;
     top: 32.5%;
     cursor: pointer;
-    padding: 5%;
+    padding: 18px;
 }
 
 .slider {
@@ -381,9 +381,25 @@ h2 {
     background-color: #1e1e1e;
 }
 
+.contact-links {
+    display: flex;
+    width: 87.5%;
+    height: 25%;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.contact-links img {
+    width: 1.563rem;
+    height: 1.563rem;
+    padding: 8px;
+}
+
 #contact-map {
-    width: 75%;
-    height: 75%;
+    text-align: center;
+    width: 87.5%;
+    height: 67.5%;
     margin: auto;
 }
 
