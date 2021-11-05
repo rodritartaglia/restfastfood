@@ -322,7 +322,8 @@ h2 {
 }
 
 .pc-1-item img {
-    width: 25%;
+    width: 5.625rem;
+    height: 5.625rem;
     margin: 2.5% 5%;
 }
 
@@ -344,6 +345,10 @@ h2 {
     margin-top: 2.5%;
     font-size: 0.781rem;
     text-align: center;
+}
+
+.btnMenu {
+    cursor: pointer;
 }
 
 /* CONTACT SECTION */

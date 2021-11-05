@@ -12,6 +12,9 @@ let about = document.getElementById("aboutNav");
 let menu = document.getElementById("menuNav");
 let contact = document.getElementById("contactNav");
 
+let menuBtns = document.getElementsByClassName("btnMenu");
+let menuSections = document.getElementsByClassName("pc-section");
+
 let profileCont = 0;
 
 
@@ -96,4 +99,45 @@ btnLeft.addEventListener("click", function() {
     dotColor()
 
 });
+
+menuBtns[0].addEventListener("click", function() {
+    for (let index = 0; index < menuSections.length; index++) {
+        menuSections[index].style.display = "none";
+    }
+
+    menuSections[0].style.display = "block";
+})
+
+menuBtns[1].addEventListener("click", function() {
+    for (let index = 0; index < menuSections.length; index++) {
+        menuSections[index].style.display = "none";
+    }
+
+    menuSections[1].style.display = "block";
+})
+
+menuBtns[2].addEventListener("click", function() {
+    for (let index = 0; index < menuSections.length; index++) {
+        menuSections[index].style.display = "none";
+    }
+
+    menuSections[2].style.display = "block";
+})
+
+menuBtns[3].addEventListener("click", function() {
+    for (let index = 0; index < menuSections.length; index++) {
+        menuSections[index].style.display = "none";
+    }
+
+    menuSections[3].style.display = "block";
+})
+
+menuBtns[4].addEventListener("click", function() {
+    for (let index = 0; index < menuSections.length; index++) {
+        menuSections[index].style.display = "none";
+    }
+
+    menuSections[4].style.display = "block";
+})
+
 
