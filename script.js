@@ -77,8 +77,18 @@ function initMap() {
     });
 }
 
+function showMenuSelection () {
+    for (let index = 0; index < menuSections.length; index++) {
+        menuSections[index].style.display = "none";
+        menuBtns[index].style.removeProperty("color");
+        menuBtns[index].children[0].style.display = "none";
+    }
+}
+
 sliderImage.style.marginLeft = "0%";
-dots[0].style.backgroundColor = "#fff"
+dots[0].style.backgroundColor = "#fff";
+menuBtns[0].style.color = "#fff";
+menuBtns[0].children[0].style.display = "block";
 
 
 navButton.addEventListener("click", toggleMenu);
@@ -100,44 +110,45 @@ btnLeft.addEventListener("click", function() {
 
 });
 
+
 menuBtns[0].addEventListener("click", function() {
-    for (let index = 0; index < menuSections.length; index++) {
-        menuSections[index].style.display = "none";
-    }
+    showMenuSelection();
 
     menuSections[0].style.display = "block";
+    menuBtns[0].style.color = "#fff"
+    menuBtns[0].children[0].style.display = "block";
 })
 
 menuBtns[1].addEventListener("click", function() {
-    for (let index = 0; index < menuSections.length; index++) {
-        menuSections[index].style.display = "none";
-    }
+    showMenuSelection();
 
     menuSections[1].style.display = "block";
+    menuBtns[1].style.color = "#fff"
+    menuBtns[1].children[0].style.display = "block";
 })
 
 menuBtns[2].addEventListener("click", function() {
-    for (let index = 0; index < menuSections.length; index++) {
-        menuSections[index].style.display = "none";
-    }
+    showMenuSelection();
 
     menuSections[2].style.display = "block";
+    menuBtns[2].style.color = "#fff"
+    menuBtns[2].children[0].style.display = "block";
 })
 
 menuBtns[3].addEventListener("click", function() {
-    for (let index = 0; index < menuSections.length; index++) {
-        menuSections[index].style.display = "none";
-    }
+    showMenuSelection();
 
     menuSections[3].style.display = "block";
+    menuBtns[3].style.color = "#fff"
+    menuBtns[3].children[0].style.display = "block";
 })
 
 menuBtns[4].addEventListener("click", function() {
-    for (let index = 0; index < menuSections.length; index++) {
-        menuSections[index].style.display = "none";
-    }
+    showMenuSelection();
 
     menuSections[4].style.display = "block";
+    menuBtns[4].style.color = "#fff"
+    menuBtns[4].children[0].style.display = "block";
 })
 
 
