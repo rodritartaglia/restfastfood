@@ -80,15 +80,15 @@ body {
 }
 
 #logo-home {
-    width: 14.8125rem;
-    border-radius: 118.5px;
+    width: 65%;
+    border-radius: 100%;
     margin: 25px auto;
     display: block;
     /* outline: solid 2px red; */
 }
 
 .home-section-2 {
-    margin-top: 2.5%;
+    margin-top: 15%;
     text-align: center;
     font-style: normal;
     font-weight: normal;
@@ -97,11 +97,11 @@ body {
 }
 
 .home-section-2-text-1 {
-    font-size: 1.688rem;
+    font-size: calc(1.6rem + 0.25vw);
 }
 
 .home-section-2-text-2 {
-    font-size: 1.235rem;
+    font-size: calc(1.2rem + 0.25vw);
 }
 
 .home-section-2 img {
@@ -145,6 +145,34 @@ body {
     100% {
         -webkit-transform: translateY(0px);
         transform: translateY(0px);
+    }
+}
+
+
+@media only screen and (orientation: landscape) {
+    .home-section-1 {
+        margin-top: 10%;
+    }
+
+    #logo-home {
+        width: 20%;
+        margin: auto;
+    }
+
+    .home-section-2 {
+        margin-top: 5%;
+    }
+
+    .home-section-2-text-1 {
+        font-size: calc(1rem + 0.25vw);
+    }
+    
+    .home-section-2-text-2 {
+        font-size: calc(0.8rem + 0.25vw);
+    }
+
+    .home-section-2 img {
+        width: 5%;
     }
 }
 
@@ -312,10 +340,10 @@ h2 {
     overflow: scroll;
 }
 
+
 .pc-1-item {
     display: flex;
     height: 20%;
-    justify-content: space-between;
     outline: 1px solid #292929;
 }
 
