@@ -17,7 +17,7 @@ body {
 .container-home {
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
     height: 25%;
     background-image: linear-gradient(rgba(41, 41, 41, .85), rgba(41, 41, 41, .85)), url(images/home.jpg);
     background-repeat: no-repeat;
@@ -79,6 +79,11 @@ body {
     /* outline: solid 2px orange; */
 }
 
+#title, #subtitle {
+    display: none;
+}
+
+
 #logo-home {
     width: 65%;
     border-radius: 100%;
@@ -86,6 +91,7 @@ body {
     display: block;
     /* outline: solid 2px red; */
 }
+
 
 .home-section-2 {
     margin-top: 15%;
@@ -118,9 +124,11 @@ body {
     0% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(30px);
     }
+
     100% {
         transform: translateY(0);
     }
@@ -131,6 +139,7 @@ body {
         -webkit-transform: translateY(-100vh);
         transform: translateY(-100vh);
     }
+
     100% {
         -webkit-transform: translateY(0px);
         transform: translateY(0px);
@@ -142,6 +151,7 @@ body {
         -webkit-transform: translateY(-100vh);
         transform: translateY(-100vh);
     }
+
     100% {
         -webkit-transform: translateY(0px);
         transform: translateY(0px);
@@ -166,7 +176,7 @@ body {
     .home-section-2-text-1 {
         font-size: calc(1rem + 0.25vw);
     }
-    
+
     .home-section-2-text-2 {
         font-size: calc(0.8rem + 0.25vw);
     }
@@ -175,6 +185,7 @@ body {
         width: 5%;
     }
 }
+
 
 /* ABOUT SECTION */
 
@@ -224,10 +235,11 @@ h2 {
     align-items: center;
 }
 
-.about-slide-container h4 {
+.about-section-2 h4 {
     font-weight: normal;
     line-height: 2.563rem;
     font-size: 1.719rem;
+    margin-top: 2rem;
 }
 
 .about-slide-container {
@@ -267,7 +279,7 @@ h2 {
 .slider-image {
     display: flex;
     width: 100%;
-    height: 110px;
+    height: 100%;
     margin-left: 0%;
 }
 
@@ -276,7 +288,7 @@ h2 {
     object-fit: cover;
 }
 
-.about-slide-container h6 {
+.profileTitles {
     font-weight: normal;
     line-height: 1.375rem;
     font-size: 1rem;
@@ -295,6 +307,10 @@ h2 {
     display: inline-block;
     border-radius: 50%;
     margin: 0 2.5%;
+}
+
+.profileTitles {
+    display: none;
 }
 
 /* MENU SECTION */
@@ -338,6 +354,10 @@ h2 {
     height: 68.5%;
     background-color: #1e1e1e;
     overflow: scroll;
+}
+
+.pc-section {
+    display: block;
 }
 
 
@@ -470,4 +490,178 @@ h2 {
 
 h6 {
     width: 50%;
+}
+
+@media (min-width: 992px) {
+    /* HOME */
+
+    .active, #icon-navbar {
+        display: none;
+    }
+
+    .home-navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 100%;
+        background-color: #0e0e0e;
+        position: fixed;
+        height: 90px;
+        z-index: 1;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .navbar a {
+        font-size: 17.8px;
+        padding: 15px;
+        margin: 0px 25px;
+        width: auto;
+
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #logo-home {
+        width: 70px;
+        margin: 10px;
+        border-radius: 100%;
+        display: block;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        outline: solid 2px red;
+        z-index: 2;
+    }
+
+    .home-section-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #title {
+        display: block;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 103.161px;
+        line-height: 155px;
+        margin-top: 50px;
+    }
+
+    #subtitle {
+        display: block;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 49.8021px;
+        line-height: 75px;
+    }
+
+
+    .home-section-2 img {
+        display: none;
+    }
+
+    /* ABOUT */
+
+    .about-slide-container {
+        display: block;
+
+    }
+
+    #btnLeft, #btnRight, .slider-dots, .dot {
+        display: none;
+    }
+
+
+
+    .slider {
+        width: 100%;
+        height: auto;
+        margin: 0px;
+        box-shadow: none;
+        overflow: auto;
+    }
+
+    .slider-image {
+        width: 100%;
+        height: auto;
+        justify-content: space-evenly;
+        margin-top: 2.5%;
+    }
+
+    .slider-image img {
+        width: 10rem;
+        height: auto;
+    }
+
+    .profileNames {
+        margin-top: 2%;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+
+
+    }
+
+    .profileTitles {
+        width: 160px;
+        display: inline;
+        margin: 0px;
+
+    }
+
+    /* MENU */
+
+    .container-menu {
+        height: auto;
+    }
+
+    .products-container {
+        height: 100%;
+    }
+
+    .menu-section-2 {
+        overflow: auto;
+    }
+
+    .pc-section {
+        display: flex;
+        height: 100%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .pc-1-item {
+        width: 15%;
+        padding: 15px;
+        margin: 10px;
+        flex-direction: column;
+        outline: 5px solid #292929;
+    }
+
+    .pc-1-item img {
+        width: 100%;
+        height: 200px;
+        margin: 0px;
+        object-fit: cover;
+    }
+
+    .pc-1-item h6 {
+        font-size: 1.25rem;
+        margin-top: 5%;
+    }
+
+    .pc-1-item span {
+        margin: 0 auto;
+    }
 }
