@@ -122,7 +122,7 @@ btnLeft.addEventListener("click", function () {
 
 });
 
-if (window.innerWidth < 992) {
+if (window.innerWidth < 769) {
     showMenuSelection();
 
     menuSections[0].style.removeProperty("display");
@@ -224,6 +224,14 @@ if (window.innerWidth < 992) {
         menuBtns[4].style.color = "#fff"
         menuBtns[4].children[0].style.display = "block";
     })
+}
+
+window.onscroll = function () {
+    if (document.documentElement.scrollTop >= 200) {
+        navbar.classList.add("scroll");
+    } else {
+        navbar.classList.remove("scroll");
+    }
 }
 
 
